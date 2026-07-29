@@ -1,33 +1,29 @@
-# In the exercise in class, we made a simple calculator program that can only do additions.
-# In this homework, we'll work on a calculator that can plus, minus, multiply and divide 2 numbers.
 # Edit this file to make a calculator program that:
 # asks the user for the first number
 # then asks the user for an operation choice (plus, minus, multiply, or divide)
 # asks the user for the second number
 # calculates and prints the result
 
-# After writing the script, make sure you test it on "https://www.online-python.com/" or "https://www.onlinegdb.com/online_python_compiler"
-# or Github codespaces, or your own python interpreter/IDE.
 
-number1 = ... # TODO
+number1 = int(input("Enter number1: "))
 operation_choice = input("Enter your choice of operation (plus, minus, multiply, divide):")
-number2 = ... # TODO
+number2 = int(input("Enter number2: "))
 
 def plus():
-    result = ... # TODO
-    return ... # TODO
+    result = number1 + number2
+    return result
 
 def minus():
-    result = ... # TODO
-    return ... # TODO
+    result = number1 - number2
+    return result
 
 def multiply():
-    result = ... # TODO
-    return ... # TODO
+    result = number1 * number2
+    return result
 
 def divide():
-    result = ... # TODO
-    return ... # TODO
+    result = number1 / number2
+    return result
 
 
 if operation_choice == "plus":
